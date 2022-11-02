@@ -10,43 +10,43 @@ var questions = [
         ]
     },
     {
-        question: "The correct sequence of HTML tags for starting a webpage is -",
-        answer: "HTML, Head, Title, Body",
+        question: " Which of the following tag is used for inserting the largest heading in HTML?",
+        answer: "<h2>",
         options: [
-            "Head, Title, HTML, body",
-            "HTML, Body, Title, Head",
-            "HTML, Title, Head, Body",
-            "HTML, Head, Title, Body",
+            "<h3>",
+            "<h2>",
+            "<h5>",
+            "<h6>",
         ]
     },
     {
-        question: "The full form of CSS is:",
-        answer: "Cascading Style Sheets",
+        question: "How to insert a background image in HTML?",
+        answer: '<body background = "img.png">',
         options: [
-            "Cascading Style Sheets",
-            "Coloured Special Sheets",
-            "Color and Style Sheets",
-            "None of The Above",
+            '<body background = "img.png">',
+            '<img background = "img.png">',
+            '<bg-image = "img.png">',
+            "None of the above",
         ]
     },
     {
-        question: "What type of CSS is generally recommended for designing large web pages?",
-        answer: "External",
+        question: "How to insert an image in HTML? ",
+        answer: '<img src = "jtp.png" />',
         options: [
-            "Inline",
-            "Internal",
-            "External",
-            "None of These",
+            '<img href = "jtp.png" />',
+            '<img url = "jtp.png" />',
+            '<img link = "jtp.png" />',
+            '<img src = "jtp.png" />',
         ]
     },
     {
-        question: "Javascript is an _______ language?",
-        answer: "Object-Based",
+        question: " The <hr> tag in HTML is used for -",
+        answer: "horizontal ruler",
         options: [
-            "Object-Oriented",
-            "Object-Based",
-            "Procedural",
-            "None of These",
+            "new line",
+            "vertical ruler",
+            "new paragraph",
+            "horizontal ruler",
         ]
     }
 ];
