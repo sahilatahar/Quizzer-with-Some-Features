@@ -1,0 +1,313 @@
+body {
+    background-color: #ADD3DE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.floatingButton {
+    height: 60px;
+    width: 170px;
+    border-radius: 50px;
+    font-size: large;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: mediumvioletred;
+    color: #fff;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.homePageMainBlock {
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.homePageMainBlock {
+    position: absolute;
+    top: 50%;
+    margin-top: -11%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: xx-large;
+}
+
+.homePageMainBlock button {
+    height: 100px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: large;
+    margin-bottom: 8%;
+    margin-left: 16%;
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.mainBlock {
+    margin: auto;
+    margin-top: 8vh;
+    width: 65vw;
+    height: 83vh;
+    border-radius: 15px;
+    background-color: #8326D0;
+    border: 2px solid black;
+}
+
+.headingBlock {
+    border-radius: 15px;
+    height: 8vh;
+    width: 100%;
+    background-color: #FF3821;
+    color: white;
+}
+
+.timer {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: end;
+    float: right;
+    padding-top: 0.5%;
+    padding-right: 5%;
+}
+
+.questionNo {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: start;
+    float: left;
+    padding-top: 0.5%;
+    padding-left: 5%;
+}
+
+.questionBlock {
+    padding: 1%;
+    float: left;
+    width: 46%;
+    height: 83%;
+    margin: 1%;
+    font-size: xx-large;
+    border-radius: 15px;
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+.optionsBlock {
+    float: right;
+    width: 48%;
+    height: 88%;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+.optionButton {
+    border: 3px solid black;
+    width: 96%;
+    height: 15%;
+    border-radius: 50px;
+    margin-top: 2%;
+    font-size: large;
+}
+
+.nextPreviousBlock {
+    width: 97%;
+    margin: 3%;
+    height: 100%;
+}
+
+.nextPreviousBtn {
+    width: 44%;
+    height: 12%;
+    margin-right: 4%;
+    margin-top: 6%;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: larger;
+}
+
+.dialogBox {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    padding: 0px 30px 30px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+.dialogBox img {
+    width: 100px;
+    margin-top: -16%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.score {
+    margin-bottom: 5px;
+}
+
+.btnOptions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dialogBox button {
+    height: 30px;
+    width: 100px;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 5px;
+}
+
+th,
+td {
+    width: 20%;
+    height: 15px;
+    border: 2px solid black;
+    font-size: small;
+    padding: 5px;
+    align-content: center;
+}
+
+.scoreContainer {
+    overflow-y: scroll;
+}
+
+.scoreContainer {
+    height: 200px;
+}
+
+.scoreContainer img {
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.editPageBgBlock {
+    margin: auto;
+    margin-top: 10vh;
+    background: #8326D0;
+    width: 60vw;
+    height: 80vh;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.editPageMainBlock {
+    margin: auto;
+    margin-top: 2%;
+    width: 100%;
+    height: 96%;
+    border-radius: 15px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.questionAnswerBox {
+    background-color: #fff;
+    margin: 20px;
+    height: 100%;
+    width: 88%;
+    border-radius: 15px;
+    text-align: left;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.questionBox {
+    width: 50%;
+    float: left;
+}
+
+.options {
+    float: right;
+    margin-top: 15%;
+    width: 40%;
+    /* width: 150px; */
+}
+
+.options button {
+    height: 60px;
+    width: 50%;
+    margin-left: 5vw;
+    border-radius: 50px;
+    font-size: large;
+    margin-bottom: 10%;
+    color: #fff;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background-color: tomato;
+}
+
+.editBtn {
+    background-color: goldenrod;
+}
+
+label {
+    /* margin: 0px 0px 0px 10px; */
+    margin-top: 20px;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding: 3px 3px 3px 10px;
+    border: 2px solid black;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.addQuestionBtn {
+    height: 60px;
+    width: 25vh;
+    border-radius: 50px;
+    font-size: large;
+    background-color: crimson;
+    color: #fff;
+    border: 2px solid white;
+    position: fixed;
+    bottom: 22vh;
+    right: 23vw;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    font-size: large;
+    color: #000;
+}

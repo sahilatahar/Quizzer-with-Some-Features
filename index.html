@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>HomePage</title>
+</head>
+
+<body onload="gotoHomePage()">
+    <!-- Floating Button-->
+    <button class="floatingButton" id="floatingButton" onclick="gotoHomePage()">Go To HomePage</button>
+    <!-- ========== HomePage ========== -->
+    <div class="homePageMainBlock" id="homePageMainBlock">
+        <button onclick="gotoQuizPage()">Start Quiz</button>
+        <button onclick="gotoEditPage()">Edit Question</button>
+        <button onclick="window.close()">Exit</button>
+    </div>
+    <!-- ========== QuizPage ========== -->
+    <div id="quizpage">
+        <div class="dialogBox" id="dialogBox">
+            <img src="tick.png">
+            <h2>Your Score: </h2>
+            <h1 class="score" id="score">
+                <h1>
+                    <div class="scoreContainer" id="scoreContainer"></div>
+                    <div class="btnOptions">
+                        <button class="checkAnswers" id="checkAnswers" onclick="checkAnswers()"
+                            onmouseover="onPreviousNextBtnMouseOver('checkAnswers')"
+                            onmouseout="onPreviousNextBtnMouseOut('checkAnswers')">Check Answer</button>
+                        <button class="startAgain" id="startAgain" onclick="startAgain()"
+                            onmouseover="onPreviousNextBtnMouseOver('startAgain')"
+                            onmouseout="onPreviousNextBtnMouseOut('startAgain')">Start Again</button>
+                        <button class="closeWindow" id="closeWindow" onclick="gotoHomePage()"
+                            onmouseover="onPreviousNextBtnMouseOver('closeWindow')"
+                            onmouseout="onPreviousNextBtnMouseOut('closeWindow')">HomePage</button>
+                    </div>
+        </div>
+        <div class="mainBlock" id="mainBlock">
+            <div class="headingBlock" id="headingBlock">
+                <p class="questionNo" id="questionNo"></p>
+                <p class="timer" id="timer"></p>
+            </div>
+            <div class="questionBlock">
+                <p id="question"></p>
+            </div>
+            <div class="optionsBlock">
+                <button class="optionButton" id="option1" onclick="onSelectOption('option1')"
+                    onmouseover="onOptionBtnMouseOver('option1')" onmouseout="onOptionBtnMouseOut('option1')"></button>
+                <button class="optionButton" id="option2" onclick="onSelectOption('option2')"
+                    onmouseover="onOptionBtnMouseOver('option2')" onmouseout="onOptionBtnMouseOut('option2')"></button>
+                <button class="optionButton" id="option3" onclick="onSelectOption('option3')"
+                    onmouseover="onOptionBtnMouseOver('option3')" onmouseout="onOptionBtnMouseOut('option3')"></button>
+                <button class="optionButton" id="option4" onclick="onSelectOption('option4')"
+                    onmouseover="onOptionBtnMouseOver('option4')" onmouseout="onOptionBtnMouseOut('option4')"></button>
+                <div class="nextPreviousBlock" id="nextPreviousBlock">
+                    <button class="nextPreviousBtn" onclick="putQuestion('previousBtn')" id="previousBtn"
+                        onmouseover="onPreviousNextBtnMouseOver('previousBtn')"
+                        onmouseout="onPreviousNextBtnMouseOut('previousBtn')">Back</button>
+                    <button class="nextPreviousBtn" id="nextBtn" onclick="nextBtn()"
+                        onmouseover="onPreviousNextBtnMouseOver('nextBtn')"
+                        onmouseout="onPreviousNextBtnMouseOut('nextBtn')">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- ========== EditPage ========== -->
+<div id="editpage">
+    <button class="addQuestionBtn" id="addQuestionBtn" onclick="addQuestion()">Add Questions</button>
+    <div class="editPageBgBlock">
+        <div class="editPageMainBlock" id="editPageMainBlock"></div>
+    </div>
+</div>
+<div class="footer">
+    2022 &copy; All rights reserved by Sahil Atahar
+</div>
+</body>
+
+</html>
